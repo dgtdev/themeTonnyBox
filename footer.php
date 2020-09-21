@@ -1,7 +1,7 @@
 	
 		<footer class="site-footer contenedor">
 			
-			<hr>
+			
 
 			<div class="contenido-footer">
 				
