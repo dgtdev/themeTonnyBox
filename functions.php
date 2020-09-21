@@ -115,7 +115,7 @@ add_action( 'after_setup_theme', 'tonnybox_add_woocommerce_support' );
 /* Check */
 require_once'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/dgtdev/themeTonnyBox',
+	'https://github.com/dgtdev/tonnybox',
 	__FILE__,
 	'unique-plugin-or-theme-slug'
 );
