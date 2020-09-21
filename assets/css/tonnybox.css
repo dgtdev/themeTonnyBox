@@ -1,0 +1,242 @@
+:root{
+	/** Fuentes **/
+	--fuentePrincipal : 'Poppins', sans-serif;
+
+	/** Colores **/
+	--colorPrimario : #FF5B00;
+    --grisOscuro : #2F2E2E;
+    --grisClaro : #EBEBEB;
+    --blanco : #ffffff;
+    --negro : #000000;
+}
+
+html{
+	font-family: var(--fuentePrincipal);
+	font-size: 62.5%;
+}
+
+body{
+	margin: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+*, *:before, *after{
+	box-sizing: inherit;
+}
+
+/** Headings **/
+
+h1,h2,h3,h4{
+	margin: 1rem 0;
+	line-height: 1.2;
+}
+
+h1{
+	font-size: 3.6rem;
+}
+
+h2{
+	font-size: 2.6rem;
+}
+
+h3{
+	font-size: 1.6rem;
+}
+
+h4{
+	font-size: 1.1rem;
+}
+
+/** Globales **/
+a{
+	text-decoration:  none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+/** Header **/
+
+.site-header{
+	display: flex;
+	background-color: var(--blanco);
+	width: 100%;
+  	height: 7rem;
+	padding: 0.5rem 0;
+	box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
+
+}
+
+.barra-navegacion{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.logo{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.logo img{
+	height: 7rem;
+	width: auto;
+}
+
+@media(max-width: 530px){
+	.logo img{	
+	height: 7rem;
+	width: auto;
+	}
+}
+/** Menu Principal **/
+
+
+/** Sub-Menu link= https://translate.googleusercontent.com/translate_c?depth=1&hl=es&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://perishablepress.com/css-dropdown-menu-wordpress/&usg=ALkJrhjcoyE8J5eNcAEPbKt7if3kqlI-RA **/
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+	
+	line-height: 3.6;
+	box-sizing: content-box;
+}
+
+#cssmenu {
+	height: 100%;
+	display: block;
+	width: auto;
+}
+#cssmenu,
+#cssmenu > ul > li > ul > li a:hover {
+	background: white;
+	
+}
+#cssmenu > ul {
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+}
+#cssmenu > ul > li {
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a {
+	outline: none;
+	display: block;
+	position: relative;
+	padding: 12px 12px;
+	text-align: center;
+	text-decoration: none;
+	color: black;  
+}
+#cssmenu > ul > li > a:hover {
+	background: white;
+	color: red;
+}
+#cssmenu > ul > li:first-child > a {
+	border-radius: 5px 0 0 5px;
+}
+#cssmenu > ul > li > a:after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	right: -2px;
+	z-index: 99;
+	
+}
+/** Parte que interesa **/
+#cssmenu ul li.has-sub:hover > a:after {
+	top: 0;
+	bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+	content: '';
+	position: absolute;
+	top: 3.8rem;
+	right: 0.4rem;
+	border: 5px solid transparent;
+	border-top: 5px solid black;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+	top: 3.8rem;
+}
+#cssmenu ul li.has-sub:hover > a {
+	background: white;
+	border-color: black;
+	padding-bottom: 13px;
+	padding-top: 13px;
+	top: -1px;
+	z-index: 999;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+	display: block;
+}
+#cssmenu ul li.has-sub > a:hover {
+	background: white;
+	border-color: black;
+}
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 7.6rem;
+	padding: 1px 0;
+	background: white;
+	border-radius: 0 0 5px 5px;
+	z-index: 999;
+}
+#cssmenu ul li > ul {
+	width: 200px;
+}
+#cssmenu ul li > ul li {
+	display: block;
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#cssmenu ul li > ul li a {
+	outline: none;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 8px 20px;
+	color: black;
+	text-decoration: none;
+}
+#cssmenu ul ul a:hover {
+	color: red;
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+	border-top: 5px solid black;
+}
+
+
