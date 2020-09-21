@@ -1,5 +1,12 @@
 <?php
 
+//Cuando el tema es activado
+function gymfitness_setup(){
+	//Habilitar imagenes destacadas
+	add_theme_support( 'post-thumbails' );
+}
+add_action('after_setup_theme', 'gymfitness_setup');
+
 // Menus de navegacion, agregar mas utilizando el arreglo
 function tonnybox_menus(){
 	register_nav_menus(array(

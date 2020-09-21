@@ -66,11 +66,13 @@ img {
 }
 
 .contenedor{
-	display: flex;
-	justify-content: center;
 	max-width: 1200px;
 	width: 95%;
 	margin: 0 auto;
+}
+
+hr{
+	border: 1px solid var(--grisClaro);
 }
 
 /** Header **/
@@ -240,3 +242,28 @@ img {
 	border-top: 5px solid red;
 }
 
+/** Footer **/
+
+.contenido-footer{
+	padding: 1rem 0;
+}
+
+@media(min-width: 768px){
+	.contenido-footer{
+	display: flex;
+	justify-content: space-between;
+	}
+}
+
+.copyrigth{
+	text-align: center;
+	font-size: 1.4rem;
+	margin: 1rem 0 0;
+}
+
+@media(min-width: 768px){
+	.copyrigth{
+	font-size: 1.8rem;
+	margin: 0;
+	}
+}
