@@ -120,10 +120,6 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'unique-plugin-or-theme-slug'
 );
 
-//Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('d8c1c797b76e7a2eb91fa0a1a7d4eb9aae3494da');
-
-//Optional: Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
 
 ?>
