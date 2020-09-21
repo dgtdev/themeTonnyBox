@@ -247,8 +247,9 @@ hr{
 .site-footer{
 	background: white;
 }
-
-
+.site-footer .cotenedor{
+	background: white;
+}
 .contenido-footer{
 	padding: 1rem 0;
 }
