@@ -118,7 +118,7 @@ img {
 #cssmenu li,
 #cssmenu a {
 	
-	line-height: 3.6;
+	line-height: 3.2;
 	box-sizing: content-box;
 }
 
@@ -170,7 +170,7 @@ img {
 	z-index: 99;
 	
 }
-/** Parte que interesa **/
+
 #cssmenu ul li.has-sub:hover > a:after {
 	top: 0;
 	bottom: 0;
@@ -178,13 +178,13 @@ img {
 #cssmenu > ul > li.has-sub > a:before {
 	content: '';
 	position: absolute;
-	top: 3.8rem;
-	right: 0.4rem;
+	top: 3.4rem;
+	right: 0.1rem;
 	border: 5px solid transparent;
 	border-top: 5px solid black;
 }
 #cssmenu > ul > li.has-sub:hover > a:before {
-	top: 3.8rem;
+	top: 3.5rem;
 }
 #cssmenu ul li.has-sub:hover > a {
 	background: white;
@@ -231,12 +231,12 @@ img {
 	padding: 8px 20px;
 	color: black;
 	text-decoration: none;
+	border: 1px solid #DDDDDD;
 }
 #cssmenu ul ul a:hover {
 	color: red;
 }
 #cssmenu > ul > li.has-sub > a:hover:before {
-	border-top: 5px solid black;
+	border-top: 5px solid red;
 }
-
 
