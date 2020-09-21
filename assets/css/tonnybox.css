@@ -118,7 +118,7 @@ img {
 #cssmenu li,
 #cssmenu a {
 	
-	line-height: 3.2;
+	line-height: 3.1;
 	box-sizing: content-box;
 }
 
@@ -207,7 +207,7 @@ img {
 	display: none;
 	width: auto;
 	position: absolute;
-	top: 7.6rem;
+	top: 5.4rem;
 	padding: 1px 0;
 	background: white;
 	border-radius: 0 0 5px 5px;
