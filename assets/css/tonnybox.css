@@ -115,148 +115,153 @@ hr{
 
 
 /** Sub-Menu link= https://translate.googleusercontent.com/translate_c?depth=1&hl=es&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://perishablepress.com/css-dropdown-menu-wordpress/&usg=ALkJrhjcoyE8J5eNcAEPbKt7if3kqlI-RA **/
-
-#cssmenu,
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
-	line-height: 3.1;
-	box-sizing: content-box;
-}
-
-#cssmenu {
-	height: 100%;
-	display: block;
-	width: auto;
-}
-
-#cssmenu,
-#cssmenu > ul > li > ul > li a:hover {
-	background: white;
-}
-
-#cssmenu > ul {
-	list-style: inside none;
-	padding: 0;
-	margin: 0;
-}
-
-#cssmenu > ul > li {
-	list-style: inside none;
-	padding: 0;
-	margin: 0;
-	float: left;
-	display: block;
-	position: relative;
-}
-
-#cssmenu > ul > li > a {
-	outline: none;
-	display: block;
-	position: relative;
-	padding: 12px 14px;
-	text-align: center;
-	text-decoration: none;
-	color: black;  
-}
-
-#cssmenu > ul > li > a:hover {
-	background: white;
-	color: red;
-}
-
-#cssmenu > ul > li:first-child > a {
-	border-radius: 5px 0 0 5px;
-}
-
-#cssmenu > ul > li > a:after {
-	content: '';
-	position: absolute;
-	top: -1px;
-	bottom: -1px;
-	right: -2px;
-	z-index: 99;
-}
-
-#cssmenu ul li.has-sub:hover > a:after {
-	top: 0;
-	bottom: 0;
-}
-
-#cssmenu > ul > li.has-sub > a:before {
-	content: '';
-	position: absolute;
-	top: 3.4rem;
-	right: 0;
-	border: 5px solid transparent;
-	border-top: 5px solid black;
-}
-
-#cssmenu > ul > li.has-sub:hover > a:before {
-	top: 3.5rem;
-}
-
-#cssmenu ul li.has-sub:hover > a {
-	background: white;
-	border-color: black;
-	padding-bottom: 13px;
-	padding-top: 13px;
-	top: -1px;
-	z-index: 999;
-}
-
-#cssmenu ul li.has-sub:hover > ul,
-#cssmenu ul li.has-sub:hover > div {
-	display: block;
-}
-
-#cssmenu ul li.has-sub > a:hover {
-	background: white;
-	border-color: black;
-}
-
-#cssmenu ul li > ul,
-#cssmenu ul li > div {
+#cssmenu{
 	display: none;
-	width: auto;
-	position: absolute;
-	top: 5.4rem;
-	padding: 1px 0;
-	background: white;
-	border-radius: 0 0 5px 5px;
-	font-size: 1.4rem;
-	z-index: 999;
 }
 
-#cssmenu ul li > ul {
-	width: 200px;
-}
+@media(min-width: 768px){
+	#cssmenu,
+	#cssmenu ul,
+	#cssmenu li,
+	#cssmenu a {
+		line-height: 3.1;
+		box-sizing: content-box;
+	}
 
-#cssmenu ul li > ul li {
-	display: block;
-	list-style: inside none;
-	padding: 0;
-	margin: 0;
-	position: relative;
-}
+	#cssmenu {
+		height: 100%;
+		display: block;
+		width: auto;
+	}
 
-#cssmenu ul li > ul li a {
-	outline: none;
-	display: block;
-	position: relative;
-	margin: 0;
-	padding: 0px 20px;
-	color: black;
-	text-decoration: none;
-	border: 1px solid #DDDDDD;
-}
+	#cssmenu,
+	#cssmenu > ul > li > ul > li a:hover {
+		background: white;
+	}
 
-#cssmenu ul ul a:hover {
-	color: red;
-}
+	#cssmenu > ul {
+		list-style: inside none;
+		padding: 0;
+		margin: 0;
+	}
 
-#cssmenu > ul > li.has-sub > a:hover:before {
-	border-top: 5px solid red;
+	#cssmenu > ul > li {
+		list-style: inside none;
+		padding: 0;
+		margin: 0;
+		float: left;
+		display: block;
+		position: relative;
+	}
+
+	#cssmenu > ul > li > a {
+		outline: none;
+		display: block;
+		position: relative;
+		padding: 12px 14px;
+		text-align: center;
+		text-decoration: none;
+		color: black;  
+	}
+
+	#cssmenu > ul > li > a:hover {
+		background: white;
+		color: red;
+	}
+
+	#cssmenu > ul > li:first-child > a {
+		border-radius: 5px 0 0 5px;
+	}
+
+	#cssmenu > ul > li > a:after {
+		content: '';
+		position: absolute;
+		top: -1px;
+		bottom: -1px;
+		right: -2px;
+		z-index: 99;
+	}
+
+	#cssmenu ul li.has-sub:hover > a:after {
+		top: 0;
+		bottom: 0;
+	}
+
+	#cssmenu > ul > li.has-sub > a:before {
+		content: '';
+		position: absolute;
+		top: 3.4rem;
+		right: 0;
+		border: 5px solid transparent;
+		border-top: 5px solid black;
+	}
+
+	#cssmenu > ul > li.has-sub:hover > a:before {
+		top: 3.5rem;
+	}
+
+	#cssmenu ul li.has-sub:hover > a {
+		background: white;
+		border-color: black;
+		padding-bottom: 13px;
+		padding-top: 13px;
+		top: -1px;
+		z-index: 999;
+	}
+
+	#cssmenu ul li.has-sub:hover > ul,
+	#cssmenu ul li.has-sub:hover > div {
+		display: block;
+	}
+
+	#cssmenu ul li.has-sub > a:hover {
+		background: white;
+		border-color: black;
+	}
+
+	#cssmenu ul li > ul,
+	#cssmenu ul li > div {
+		display: none;
+		width: auto;
+		position: absolute;
+		top: 5.4rem;
+		padding: 1px 0;
+		background: white;
+		border-radius: 0 0 5px 5px;
+		font-size: 1.4rem;
+		z-index: 999;
+	}
+
+	#cssmenu ul li > ul {
+		width: 200px;
+	}
+
+	#cssmenu ul li > ul li {
+		display: block;
+		list-style: inside none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+	}
+
+	#cssmenu ul li > ul li a {
+		outline: none;
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0px 20px;
+		color: black;
+		text-decoration: none;
+		border: 1px solid #DDDDDD;
+	}
+
+	#cssmenu ul ul a:hover {
+		color: red;
+	}
+
+	#cssmenu > ul > li.has-sub > a:hover:before {
+		border-top: 5px solid red;
+	}
 }
 
 /** Footer **/
