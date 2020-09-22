@@ -76,7 +76,6 @@ hr{
 }
 
 /** Header **/
-
 .site-header{
 	display: flex;
 	background-color: var(--blanco);
@@ -84,7 +83,6 @@ hr{
   	height: 7rem;
 	padding: 0.5rem 0;
 	box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
-
 }
 
 .barra-navegacion{
@@ -96,7 +94,6 @@ hr{
 .logo{
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .logo img{
@@ -106,8 +103,8 @@ hr{
 
 @media(max-width: 530px){
 	.logo img{	
-	height: 7rem;
-	width: auto;
+		height: 7rem;
+		width: auto;
 	}
 }
 /** Menu Principal **/
@@ -119,7 +116,6 @@ hr{
 #cssmenu ul,
 #cssmenu li,
 #cssmenu a {
-	
 	line-height: 3.1;
 	box-sizing: content-box;
 }
@@ -129,16 +125,18 @@ hr{
 	display: block;
 	width: auto;
 }
+
 #cssmenu,
 #cssmenu > ul > li > ul > li a:hover {
 	background: white;
-	
 }
+
 #cssmenu > ul {
 	list-style: inside none;
 	padding: 0;
 	margin: 0;
 }
+
 #cssmenu > ul > li {
 	list-style: inside none;
 	padding: 0;
@@ -147,6 +145,7 @@ hr{
 	display: block;
 	position: relative;
 }
+
 #cssmenu > ul > li > a {
 	outline: none;
 	display: block;
@@ -156,13 +155,16 @@ hr{
 	text-decoration: none;
 	color: black;  
 }
+
 #cssmenu > ul > li > a:hover {
 	background: white;
 	color: red;
 }
+
 #cssmenu > ul > li:first-child > a {
 	border-radius: 5px 0 0 5px;
 }
+
 #cssmenu > ul > li > a:after {
 	content: '';
 	position: absolute;
@@ -170,13 +172,13 @@ hr{
 	bottom: -1px;
 	right: -2px;
 	z-index: 99;
-	
 }
 
 #cssmenu ul li.has-sub:hover > a:after {
 	top: 0;
 	bottom: 0;
 }
+
 #cssmenu > ul > li.has-sub > a:before {
 	content: '';
 	position: absolute;
@@ -185,9 +187,11 @@ hr{
 	border: 5px solid transparent;
 	border-top: 5px solid black;
 }
+
 #cssmenu > ul > li.has-sub:hover > a:before {
 	top: 3.5rem;
 }
+
 #cssmenu ul li.has-sub:hover > a {
 	background: white;
 	border-color: black;
@@ -196,14 +200,17 @@ hr{
 	top: -1px;
 	z-index: 999;
 }
+
 #cssmenu ul li.has-sub:hover > ul,
 #cssmenu ul li.has-sub:hover > div {
 	display: block;
 }
+
 #cssmenu ul li.has-sub > a:hover {
 	background: white;
 	border-color: black;
 }
+
 #cssmenu ul li > ul,
 #cssmenu ul li > div {
 	display: none;
@@ -215,9 +222,11 @@ hr{
 	border-radius: 0 0 5px 5px;
 	z-index: 999;
 }
+
 #cssmenu ul li > ul {
 	width: 200px;
 }
+
 #cssmenu ul li > ul li {
 	display: block;
 	list-style: inside none;
@@ -225,6 +234,7 @@ hr{
 	margin: 0;
 	position: relative;
 }
+
 #cssmenu ul li > ul li a {
 	outline: none;
 	display: block;
@@ -235,40 +245,86 @@ hr{
 	text-decoration: none;
 	border: 1px solid #DDDDDD;
 }
+
 #cssmenu ul ul a:hover {
 	color: red;
 }
+
 #cssmenu > ul > li.has-sub > a:hover:before {
 	border-top: 5px solid red;
 }
 
 /** Footer **/
-
 .site-footer{
-	background: white;
+	background: #272727;
 	width: 100%;
 }
 
-.contenido-footer{
-	padding: 1rem 0;
+.site-footer .contenedor{
+	display: block;
+}
+
+.contenedor-menu{
+	width: 100%;
+	padding: 2rem 0;
+}
+
+.copyrigth-footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	background: #171717	
 }
 
 @media(min-width: 768px){
-	.contenido-footer{
-	display: flex;
-	justify-content: space-between;
+	.site-footer .contenedor{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contenedor-menu{
+		display: flex;
+		width: 23%;
+	}
+
+	.copyrigth-footer{
+		width: 31%;
+		padding: 4rem 0;
+	}
+}
+
+.copyrigth-footer p{
+	color: #929292;
+	padding: 0 1.5rem;
+}
+
+.copyrigth-footer span{
+	color: #666666;
+}
+
+.copyrigth-footer a{
+	color: #929292;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+@media(min-width: 768px){
+	.copyrigth-footer a{
+		font-size: 1.8rem;
 	}
 }
 
 .copyrigth{
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin: 1rem 0 0;
 }
 
 @media(min-width: 768px){
 	.copyrigth{
-	font-size: 1.8rem;
-	margin: 0;
+		font-size: 1.6rem;
+		margin: 0;
 	}
 }
