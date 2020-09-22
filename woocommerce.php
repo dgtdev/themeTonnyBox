@@ -1,7 +1,13 @@
 <?php get_header(); ?>
-	<div id="main" class="row">
-	<div id="content" class="centrar">
-	<?php woocommerce_content(); ?>
+	
+	<div class="contenedor">
+	
+		<div class="wc-content">
+	
+			<?php woocommerce_content(); ?>
+	
+		</div>
+	
 	</div>
-	</div>
+
 <?php get_footer(); ?>

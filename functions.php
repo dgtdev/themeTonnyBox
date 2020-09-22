@@ -1,11 +1,18 @@
 <?php
 
 //Cuando el tema es activado
-function gymfitness_setup(){
+function tonnybox_setup(){
 	//Habilitar imagenes destacadas
 	add_theme_support( 'post-thumbails' );
+
+	//Agregar imagenes de tamaño personalizado
+	add_image_size( 'square', 350, 350, true);
+	add_image_size( 'portrait', 350, 724, true);
+	add_image_size( 'cajas', 400, 375, true);
+	add_image_size( 'mediano', 700, 400, true);
+	add_image_size( 'blog', 966, 644, true);
 }
-add_action('after_setup_theme', 'gymfitness_setup');
+add_action('after_setup_theme', 'tonnybox_setup');
 
 // Menus de navegacion, agregar mas utilizando el arreglo
 function tonnybox_menus(){
@@ -43,7 +50,8 @@ function tonnybox_custom_logo_setup() {
 	 'flex-width'  => true,
 	 'unlink-homepage-logo' => true,
  	);
- add_theme_support( 'custom-logo', $defaults );
+
+ 	add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'tonnybox_custom_logo_setup' );
 
@@ -112,9 +120,8 @@ class CSS_Menu_Walker extends Walker {
 
 /* Soporte Woocommerce */
 
-function tonnybox_add_woocommerce_support()
- {
-add_theme_support( 'woocommerce' );
+function tonnybox_add_woocommerce_support(){
+	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'tonnybox_add_woocommerce_support' );
 

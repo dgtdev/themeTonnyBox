@@ -71,6 +71,10 @@ img {
 	margin: 0 auto;
 }
 
+.container{
+	min-height: 393px;
+}
+
 hr{
 	border: 1px solid var(--grisClaro);
 }
@@ -150,7 +154,7 @@ hr{
 	outline: none;
 	display: block;
 	position: relative;
-	padding: 12px 12px;
+	padding: 12px 14px;
 	text-align: center;
 	text-decoration: none;
 	color: black;  
@@ -183,7 +187,7 @@ hr{
 	content: '';
 	position: absolute;
 	top: 3.4rem;
-	right: 0.1rem;
+	right: 0;
 	border: 5px solid transparent;
 	border-top: 5px solid black;
 }
@@ -220,6 +224,7 @@ hr{
 	padding: 1px 0;
 	background: white;
 	border-radius: 0 0 5px 5px;
+	font-size: 1.4rem;
 	z-index: 999;
 }
 
@@ -240,7 +245,7 @@ hr{
 	display: block;
 	position: relative;
 	margin: 0;
-	padding: 8px 20px;
+	padding: 0px 20px;
 	color: black;
 	text-decoration: none;
 	border: 1px solid #DDDDDD;
@@ -328,3 +333,12 @@ hr{
 		margin: 0;
 	}
 }
+
+/** Woocommerce **/
+
+.wc-content{
+	padding: 4rem 4rem;
+}
+
+
+
