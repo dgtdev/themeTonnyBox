@@ -335,10 +335,14 @@ hr{
 }
 
 /** Woocommerce **/
-
 .wc-content{
-	padding: 4rem 4rem;
+	padding: 1rem 1rem;
 }
 
+@media(min-width: 768px){
+	.wc-content{
+	padding: 4rem 4rem;
+}
+}
 
 
