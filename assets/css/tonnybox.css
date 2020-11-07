@@ -4,8 +4,9 @@
 
 	/** Colores **/
 	--colorPrimario : #FF5B00;
-    --grisOscuro : #2F2E2E;
-    --grisClaro : #EBEBEB;
+    --grisOscu : #2F2E2E;
+	--grisOscuro : #202320;
+	--grisClaro : #EBEBEB;
     --blanco : #ffffff;
     --negro : #000000;
 }
@@ -23,10 +24,8 @@ body{
 	line-height: 1.5;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-  }
+
+
 *, *:before, *after{
 	box-sizing: inherit;
 }
@@ -85,9 +84,11 @@ hr{
 }
 
 /** Header **/
+
+
 .site-header{
 	display: flex;
-	background-color: var(--blanco);
+	background-color: var(--grisOscuro);
 	width: 100%;
   	height: 7rem;
 	padding: 0.5rem 0;
@@ -97,6 +98,7 @@ hr{
 .barra-navegacion{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 }
 
@@ -123,8 +125,19 @@ hr{
 #cssmenu{
 	display: none;
 }
+@media(max-width: 750px){
+	.dgwt-wcas-search-wrapp{
+		max-width: 300px !important;
+	}
+}
+@media(min-width:750px) and (max-width: 1200px){
+	.dgwt-wcas-search-wrapp{
+		max-width: 600px !important;
+	}
+}
 
-@media(min-width: 768px){
+@media(min-width: 1200px){
+
 	#cssmenu,
 	#cssmenu ul,
 	#cssmenu li,
@@ -141,7 +154,7 @@ hr{
 
 	#cssmenu,
 	#cssmenu > ul > li > ul > li a:hover {
-		background: white;
+		background: var(--grisOscuro);
 	}
 
 	#cssmenu > ul {
@@ -166,11 +179,11 @@ hr{
 		padding: 12px 14px;
 		text-align: center;
 		text-decoration: none;
-		color: black;  
+		color: white;  
 	}
 
 	#cssmenu > ul > li > a:hover {
-		background: white;
+		background: var(--grisOscuro);
 		color: red;
 	}
 
@@ -198,7 +211,7 @@ hr{
 		top: 3.4rem;
 		right: 0;
 		border: 5px solid transparent;
-		border-top: 5px solid black;
+		border-top: 5px solid white;
 	}
 
 	#cssmenu > ul > li.has-sub:hover > a:before {
@@ -206,8 +219,8 @@ hr{
 	}
 
 	#cssmenu ul li.has-sub:hover > a {
-		background: white;
-		border-color: black;
+		background: var(--grisOscuro);
+		border-color: white;
 		padding-bottom: 13px;
 		padding-top: 13px;
 		top: -1px;
@@ -220,8 +233,8 @@ hr{
 	}
 
 	#cssmenu ul li.has-sub > a:hover {
-		background: white;
-		border-color: black;
+		background: var(--grisOscuro);
+		border-color: white;
 	}
 
 	#cssmenu ul li > ul,
@@ -231,7 +244,7 @@ hr{
 		position: absolute;
 		top: 5.4rem;
 		padding: 1px 0;
-		background: white;
+		background: var(--grisOscuro);;
 		border-radius: 0 0 5px 5px;
 		font-size: 1.4rem;
 		z-index: 999;
@@ -255,7 +268,7 @@ hr{
 		position: relative;
 		margin: 0;
 		padding: 0px 20px;
-		color: black;
+		color: white;
 		text-decoration: none;
 		border: 1px solid #DDDDDD;
 	}

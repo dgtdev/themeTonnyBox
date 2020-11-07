@@ -27,17 +27,21 @@
 				<?php } ?>
 				
 			</div>
-
-			<?php
-				$args = array(
-					'theme_location' => 'menu-principal',
-					'container' => 'nav',
-					'container_id' => 'cssmenu',
-					'walker' => new CSS_Menu_Walker()
-				);
-				wp_nav_menu( $args );
-			?>
-
+			
+			<?php echo do_shortcode('[wcas-search-form]'); ?>
+			
+			<div>
+				
+				<?php
+					$args = array(
+						'theme_location' => 'menu-principal',
+						'container' => 'nav',
+						'container_id' => 'cssmenu',
+						'walker' => new CSS_Menu_Walker()
+					);
+					wp_nav_menu( $args );
+				?>
+			</div>
 		</div>
 	</div>
 </header>
