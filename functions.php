@@ -17,8 +17,7 @@ add_action('after_setup_theme', 'tonnybox_setup');
 // Menus de navegacion, agregar mas utilizando el arreglo
 function tonnybox_menus(){
 	register_nav_menus(array(
-		'menu-principal' => __( 'Menu Principal'),
-		'menu-extra' => __('Menu Extra')
+		'menu-principal' => __( 'Menu Principal')
 	));
 }
 
@@ -41,7 +40,7 @@ add_action('wp_enqueue_scripts', 'tonnybox_scripts_styles');
 /* Enable support for title-tag */
 add_theme_support( 'title-tag' );
 
-	/* Enable support for custom logo */
+/* Enable support for custom logo */
 function tonnybox_custom_logo_setup() {
 	$defaults = array(
 	 'height'      => 100,
