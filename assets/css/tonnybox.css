@@ -125,18 +125,18 @@ hr{
 #cssmenu{
 	display: none;
 }
-@media(max-width: 750px){
+@media(max-width: 755px){
 	.dgwt-wcas-search-wrapp{
 		max-width: 300px !important;
 	}
 }
-@media(min-width:750px) and (max-width: 1200px){
+@media(min-width:755px) and (max-width: 1249px){
 	.dgwt-wcas-search-wrapp{
 		max-width: 600px !important;
 	}
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1250px){
 
 	#cssmenu,
 	#cssmenu ul,
@@ -150,6 +150,7 @@ hr{
 		height: 100%;
 		display: block;
 		width: auto;
+		font-size: 1.5rem;
 	}
 
 	#cssmenu,
@@ -176,7 +177,7 @@ hr{
 		outline: none;
 		display: block;
 		position: relative;
-		padding: 13px 14px;
+		padding: 13px 12px;
 		text-align: center;
 		text-decoration: none;
 		color: white;  
