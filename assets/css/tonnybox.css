@@ -88,7 +88,7 @@ hr{
 
 .site-header{
 	display: flex;
-	background-color: var(--grisOscuro);
+	background-color: var(--blanco);
 	width: 100%;
   	height: 7rem;
 	padding: 0.5rem 0;
@@ -112,8 +112,12 @@ hr{
 	height: 7rem;
 	width: auto;
 }
-
-@media(max-width: 530px){
+@media(min-width: 756px){
+.lupa{
+	display: none;
+}
+}
+@media(max-width: 755px){
 	.logo{
 		padding: 0 0;
 	}
@@ -121,9 +125,21 @@ hr{
 	.logo img{	
 		height: 7rem;
 		width: auto;
-	
 	}
+	
+	.lupa{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.lupa img{	
+		height: 5rem;
+		width: auto;
+	}
+
 }
+
+
 /** Menu Principal **/
 
 
@@ -133,6 +149,7 @@ hr{
 }
 @media(max-width: 755px){
 	.dgwt-wcas-search-wrapp{
+		display: none;
 		max-width: 300px !important;
 	}
 }
@@ -161,7 +178,7 @@ hr{
 
 	#cssmenu,
 	#cssmenu > ul > li > ul > li a:hover {
-		background: var(--grisOscuro);
+		background: var(--blanco);
 	}
 
 	#cssmenu > ul {
@@ -186,11 +203,11 @@ hr{
 		padding: 13px 12px;
 		text-align: center;
 		text-decoration: none;
-		color: white;  
+		color: black;  
 	}
 
 	#cssmenu > ul > li > a:hover {
-		background: var(--grisOscuro);
+		background: var(--blanco);
 		color: red;
 	}
 
@@ -218,7 +235,7 @@ hr{
 		top: 3.4rem;
 		right: 0;
 		border: 5px solid transparent;
-		border-top: 5px solid white;
+		border-top: 5px solid black;
 	}
 
 	#cssmenu > ul > li.has-sub:hover > a:before {
@@ -226,8 +243,8 @@ hr{
 	}
 
 	#cssmenu ul li.has-sub:hover > a {
-		background: var(--grisOscuro);
-		border-color: white;
+		background: var(--blanco);
+		border-color: black;
 		padding-bottom: 13px;
 		padding-top: 13px;
 		top: -1px;
@@ -240,8 +257,8 @@ hr{
 	}
 
 	#cssmenu ul li.has-sub > a:hover {
-		background: var(--grisOscuro);
-		border-color: white;
+		background: var(--blanco);
+		border-color: black;
 	}
 
 	#cssmenu ul li > ul,
@@ -251,7 +268,7 @@ hr{
 		position: absolute;
 		top: 5.4rem;
 		padding: 1px 0;
-		background: var(--grisOscuro);;
+		background: var(--blanco);;
 		border-radius: 0 0 5px 5px;
 		font-size: 1.4rem;
 		z-index: 999;
@@ -275,7 +292,7 @@ hr{
 		position: relative;
 		margin: 0;
 		padding: 0px 20px;
-		color: white;
+		color: black;
 		text-decoration: none;
 		border: 1px solid #DDDDDD;
 	}

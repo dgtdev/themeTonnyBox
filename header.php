@@ -44,7 +44,10 @@
 			</div>
 
 			<?php echo do_shortcode('[wcas-search-form]'); ?>
-
+			
+			<div class="lupa">			
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/lupa.png" alt="search">
+			</div>
 		</div>
 	</div>
 </header>
