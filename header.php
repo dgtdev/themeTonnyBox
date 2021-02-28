@@ -28,7 +28,7 @@
 				
 			</div>
 			
-			<?php echo do_shortcode('[wcas-search-form]'); ?>
+			
 			
 			<div>
 				
@@ -42,6 +42,9 @@
 					wp_nav_menu( $args );
 				?>
 			</div>
+
+			<?php echo do_shortcode('[wcas-search-form]'); ?>
+
 		</div>
 	</div>
 </header>
