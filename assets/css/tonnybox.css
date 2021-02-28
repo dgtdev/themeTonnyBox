@@ -114,9 +114,14 @@ hr{
 }
 
 @media(max-width: 530px){
+	.logo{
+		padding: 0 0;
+	}
+	
 	.logo img{	
 		height: 7rem;
 		width: auto;
+	
 	}
 }
 /** Menu Principal **/
